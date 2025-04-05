@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".api.frontend.DetailSuperHeroActivity"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/imageViewSuperheroDetail"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="220dp"
+        app:cardBackgroundColor="@color/background_superhero_view">
+
+        <ProgressBar
+            android:id="@+id/progressBarDetail"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scrollbarStyle="outsideOverlay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewSuperHeroDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Superman"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                style="@style/TextAppearance.MaterialComponents.Headline5" />
+
+            <TextView
+                android:id="@+id/textViewSuperHeroFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Super Kale"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:maxLines="1"/>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:id="@+id/textViewIntelligence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Inteligencia:"/>
+                <View
+                    android:id="@+id/viewIntelligence"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/superhero_stat_intelligence"
+                    android:layout_marginTop="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/textViewPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Poder:"/>
+
+                <View
+                    android:id="@+id/viewPower"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/superhero_stat_power"
+                    android:layout_marginTop="8dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/textViewCombat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Combate:"/>
+                <View
+                    android:id="@+id/viewCombat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/superhero_stat_combat"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Velocidad:"/>
+                <View
+                    android:id="@+id/viewSpeed"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/superhero_stat_speed"
+                    android:layout_marginTop="8dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonBookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_bookmark_add"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/todo_accent"
+        android:visibility="gone"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_delete"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/todo_background_enabled"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".api.backend.localdatabase.DatabaseInit"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".api.frontend.SuperHeroSavedActivity"
+            android:exported="false"
+            android:label="Lista de superhéroes guardados"/>
+        <activity
+            android:name=".bmi.ImcActivity"
+            android:exported="false"
+            android:label="Calculadora IMC"/>
+        <activity
+            android:name=".bmi.ImcResultActivity"
+            android:exported="false"
+            android:label="Resultado IMC"/>
+        <activity
+            android:name=".todo.TodoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ListApp"
+            android:label="Lista de tareas"/>
+        <activity
+            android:name=".basics.Lifecycle"
+            android:exported="false"
+            android:theme="@style/Theme.ListApp"
+            android:label="Pruebas de ciclo de vida"/>
+        <activity
+            android:name=".api.frontend.SuperHeroListActivity"
+            android:exported="false"
+            android:label="Lista de superhéroes"/>
+        <activity
+            android:name=".api.frontend.DetailSuperHeroActivity"
+            android:exported="false"
+            android:label="Detalle de superheroe"/>
+        <activity
+            android:name=".datastore.SettingsActivity"
+            android:exported="false"
+            android:label="Settings"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Fundamentos ANDROID">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

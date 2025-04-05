@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Aristidevs colors-->
+    <color name="background_component">#1D1E33</color>
+    <color name="background_component_selected">#FF111328</color>
+    <color name="background_app">#0E0B20</color>
+    <color name="background_button">#EB1555</color>
+    <color name="title_text">#FF8D8E98</color>
+
+    <color name="color_very_wrong">#EB5C5C</color>
+    <color name="color_wrong">#E7CF7C</color>
+    <color name="color_right">#63EB4C</color>
+
+    <!--TodoApp (Dark Mode)-->
+    <color name="todo_background_card">#303030</color> <!-- Darker grey, higher contrast -->
+    <color name="todo_background_enabled">#828282</color> <!-- A bit lighter grey -->
+    <color name="todo_background_todo_app">#121212</color> <!-- Darker background -->
+    <color name="todo_subtitle_text">#BDBDBD</color> <!-- Lighter grey for more visibility -->
+    <color name="todo_accent">#F48FB1</color> <!-- Slightly lighter to be visible -->
+
+    <color name="todo_business_category">#FFB74D</color> <!-- Lighter orange -->
+    <color name="todo_personal_category">#4DD0E1</color> <!-- Lighter cyan -->
+    <color name="todo_physical_category">#F06292</color> <!-- Lighter pink -->
+    <color name="todo_other_category">#81C784</color> <!-- Lighter green -->
+
+
+    <!--SuperheroApp (Dark Mode)-->
+    <color name="background_superhero_view">#121212</color> <!-- Very dark grey -->
+    <color name="superhero_item_name">#D1B0F2</color> <!-- Lighter purple -->
+    <color name="superhero_stat_intelligence">#90EE90</color> <!-- Lighter green -->
+    <color name="superhero_stat_strength">#FF7F7F</color> <!-- Less saturated red -->
+    <color name="superhero_stat_speed">#FFC34D</color> <!-- Lighter orange -->
+    <color name="superhero_stat_durability">#64B5F6</color> <!-- Lighter blue -->
+    <color name="superhero_stat_power">#FFF59D</color> <!-- Lighter yellow -->
+    <color name="superhero_stat_combat">#B39DDB</color> <!-- Lighter purple -->
+
+
+</resources>

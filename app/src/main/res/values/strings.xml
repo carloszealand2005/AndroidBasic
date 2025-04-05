@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Some test apps</string>
+    <string name="height">height</string>
+    <string name="male">sigma boy</string>
+    <string name="female">sigma girl</string>
+    <string name="init_height">120 cm</string>
+    <string name="weight">weight</string>
+    <string name="init_weight">50 kg</string>
+    <string name="age">AGE</string>
+    <string name="init_age">30</string>
+    <string name="sumbit">Submit</string>
+    <string name="result">Your result</string>
+    <string name="recalculate">Try again</string>
+    <string name="todo_welcome">Welcome Bigooh20</string>
+    <string name="todo_category">Category</string>
+    <string name="todo_tasks">Tareas</string>
+    <string name="hint_task">Introduce tu tarea</string>
+    <string name="todo_personal">Personal</string>
+    <string name="todo_business">Business</string>
+    <string name="todo_physical">Physical</string>
+    <string name="todo_other">Other</string>
+    <string name="todo_create_task">Create task</string>
+    <string name="superhero_list">Superhero list</string>
+    <string name="saved_items_superhero">Saved superheroes</string>
+</resources>
