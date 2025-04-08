@@ -10,6 +10,7 @@ import com.example.myapplication.datastore.SettingsActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.todo.TodoActivity
 
+// MainActivity
 class MainActivity : AppCompatActivity() {
     private lateinit var mBinding : ActivityMainBinding
 
