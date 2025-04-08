@@ -42,8 +42,7 @@ class DetailSuperHeroActivity : AppCompatActivity() {
 
         val id = intent.extras?.getString(Tools.KEY_ID_SUPERHERO).orEmpty()
 
-        val action = intent?.extras?.getSerializable(Tools.KEY_ACTION)
-                as? DetailAction? ?: DetailAction.LOAD_FROM_API
+        val action = intent?.extras?.getSerializable(Tools.KEY_ACTION) as? DetailAction? ?: DetailAction.LOAD_FROM_API
 
 
             lifecycleScope.launch {

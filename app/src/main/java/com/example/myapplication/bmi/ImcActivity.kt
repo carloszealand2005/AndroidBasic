@@ -112,4 +112,28 @@ class ImcActivity : AppCompatActivity() {
         return currentWeight / heightInMeters.pow(2.0)
     }
 
+    //onSaveInstance & onRestoreInstance
+    //Estos métodos se utilizan para guardar y restaurar el estado de la actividad.
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt(Tools.WEIGHT_KEY, currentWeight)
+        outState.putInt(Tools.AGE_KEY, currentAge)
+        outState.putFloat(Tools.HEIGHT_KEY, currentHeight)
+        outState.putInt(Tools.GENDER_KEY, gender)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        currentWeight = savedInstanceState.getInt(Tools.WEIGHT_KEY)
+        currentAge = savedInstanceState.getInt(Tools.AGE_KEY)
+        currentHeight = savedInstanceState.getFloat(Tools.HEIGHT_KEY)
+        gender = savedInstanceState.getInt(Tools.GENDER_KEY)
+
+        updateWeight(currentWeight)
+        updateAge(currentAge)
+        setBackgroundColor(gender)
+
+    }
+
 }
